@@ -1,0 +1,35 @@
+Model Summary:
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 74, 74, 32)        320       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 37, 37, 32)       0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 12, 12, 64)        18496     
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 6, 6, 64)         0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (None, 2, 2, 128)         73856     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 1, 1, 128)        0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 128)               0         
+                                                                 
+ dense (Dense)               (None, 512)               66048     
+                                                                 
+ dropout (Dropout)           (None, 512)               0         
+                                                                 
+ dense_1 (Dense)             (None, 6)                 3078      
+                                                                 
+=================================================================
+Total params: 161,798
+Trainable params: 161,798
+Non-trainable params: 0
+_________________________________________________________________
+
+Image required input size for prediction: 224*224px
