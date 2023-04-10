@@ -1,0 +1,1 @@
+The ECG image 'Myocardial Inf.jpg' is classified as Myocardial Infarction with Confidence: 81.22% confidence.
