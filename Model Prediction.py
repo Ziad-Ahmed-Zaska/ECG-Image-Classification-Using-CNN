@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 # Preprocess the ECG image
-img_path = 'archive/ECG Heartbeat Categorization Dataset Image Version/test/Unclassifiable Beat/195.jpg'
+img_path = 'archive/ECG Heartbeat Categorization Dataset Image Version/test/Supraventricular Premature Beat/555.jpg'
 img = Image.open(img_path)
 img = img.resize((224, 224))  # model was trained on 224x224 images
 img = img.convert('L')  # convert to grayscale
