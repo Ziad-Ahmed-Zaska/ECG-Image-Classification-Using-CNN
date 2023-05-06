@@ -1,0 +1,1 @@
+The ECG image '0.jpg' is classified as Unclassifiable Beat with Confidence: 84.73% confidence.

@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 # Preprocess the ECG image
-img_path = 'archive/Random Internet Samples/Myocardial Inf.jpg'
+img_path = 'archive/Random Internet Samples/Supraventricular Premature Beat.png'
 img = Image.open(img_path)
 img = img.resize((224, 224))  # model was trained on 224x224 images
 img = img.convert('L')  # convert to grayscale

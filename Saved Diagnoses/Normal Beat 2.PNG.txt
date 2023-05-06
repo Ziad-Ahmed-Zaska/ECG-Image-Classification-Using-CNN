@@ -1,0 +1,1 @@
+The ECG image 'Normal Beat 2.PNG' is classified as Normal Beat with Confidence: 74.41% confidence.
