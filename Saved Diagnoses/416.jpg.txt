@@ -1,0 +1,1 @@
+The ECG image '416.jpg' is classified as Supraventricular Premature Beat with Confidence: 98.27% confidence.

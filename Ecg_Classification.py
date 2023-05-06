@@ -41,7 +41,7 @@ class ECGDiagnosisGUI:
         self.save_button.pack(pady=10)
 
         # Load the pre-trained CNN model
-        model_path = 'Output Model/ECG Diagnosis Model/CNN_model.h5'
+        model_path = 'Output Model/ECG Diagnosis Model_Best/CNN_model.h5'
         self.model = tf.keras.models.load_model(model_path)
 
     def select_image(self):

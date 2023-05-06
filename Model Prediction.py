@@ -10,7 +10,7 @@ img = img.convert('L')  # convert to grayscale
 img = np.array(img) / 255.0  # normalize pixel values
 
 # Load the pre-trained CNN model
-model_path = 'Output Model/ECG Diagnosis Model/CNN_model.h5'
+model_path = 'Output Model/ECG Diagnosis Model_Best/CNN_model.h5'
 model = tf.keras.models.load_model(model_path)
 
 # Make predictions on the ECG image
