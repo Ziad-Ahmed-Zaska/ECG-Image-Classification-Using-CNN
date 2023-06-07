@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.gif')}}" type="image/gif">
+    <title>heart diseases</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+x
+.clear-fix {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    height: 100vh;
+    background-image: url("{{ url_for('static', filename='images/aakash_672045839.png')}}");
+    background-size: cover;
+    background-position: center center;}
+
+    .layer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+       
+    }
+    li a {
+        color: beige;
+    }
+   .home-content{
+    color: white ;
+    text-align: center;
+   }
+   h1{
+    font-size: x-large;
+    font-weight: 400;
+
+   }
+   .typingClass::after{
+    content: "";
+    animation-name: typingSkill;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typingSkill{
+
+    0%{ content: "|"; }
+
+    2% { content: "h|"; }
+    4% { content: "he|"; }
+    6% { content: "hea|"; }
+    8% { content: "hear|"; }
+    10% { content: "heart|"; }
+    12% { content: "heart di|"; }
+    14% { content: "heart dis|"; }
+    16% { content: "heart dise|"; }
+    18% { content: "heart disea|"; }
+    30% { content: "heart diseas|"; }
+    30% { content: "heart diseases|"; }
+
+    100%{  }
+}
+.section2{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px;
+padding: 20px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.section2 h2{
+    color:#18191a;
+    padding: 50px;
+}
+h2::after{
+    content: "";
+    animation-name: about;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+
+}
+
+@keyframes about{
+
+    0%{ content: "|"; }
+
+    2% { content: "o|"; }
+    4% { content: "ou|"; }
+    6% { content: "our|"; }
+    8% { content: "our t|"; }
+    10% { content: "our te|"; }
+    12% { content: "our tea|"; }
+    14% { content: "our team |"; }
+   
+    100%{  }
+}
+.feedimg{
+    width: 20%;
+    z-index: 2;
+    
+    }
+    .feedimg img {
+        border: 0.3px solid;
+    border-radius: 50%;
+    }
+    .feed .container{
+        width:80%;
+        background-color:#c2b099;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .feed-content{
+    display: flex;
+    padding: 50px;
+    z-index: 200000000;
+    
+    }
+    .feedcap{
+        width: 80%;
+       
+        padding: 20px;
+    }
+    .color{
+        width:250px;
+        height:250px;
+       background-color: #c97e4f;
+       position: absolute;
+       top: -130px;
+       bottom:-130px; 
+       transform: rotate(45deg);
+    }
+    .carousel_slide{
+display: flex;
+justify-content: center;
+flex-direction: column;
+    }
+    .section3{
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 50px;
+     
+      color: black;
+    }
+    .card{
+        width: 30%;
+       
+        
+    }
+   .haed{
+    text-align: center;
+    position: relative;
+   }
+   .haed h3{
+    color: black;
+   }
+  .haed h3::after{
+    content: "";
+    animation-name: info;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+
+}
+
+@keyframes info{
+
+    0%{ content: "|"; }
+
+    2% { content: "P|"; }
+    4% { content: "Pro|"; }
+    6% { content: "proj|"; }
+    8% { content: "proje|"; }
+    10% { content: "proje|"; }
+    12% { content: "projec|"; }
+    16% { content: "project I |"; }
+    18% { content: "project inf |"; }
+    20% { content: "project info|"; }
+    22% { content: "project infor |"; }
+    25% { content: "project inform|"; }
+    28% { content: "project informa|"; }
+    30% { content: "project informat|"; }
+
+    32% { content: "project informatio|"; }
+    33% { content: "project information|"; }
+   
+    100%{  }
+}
+   .line,.line1 ,.line2  {
+    border-top: 1px solid #c97e4f;
+margin:auto;
+
+  }
+  .line{
+    width: 20%;
+    margin-top: 2px;
+  }
+  .line1{
+    width:15%;
+    margin-top: 2px;
+  }
+  .line2{
+    width: 10%;
+    margin-top: 2px;
+  }
+    .sup1 ,.sup2{
+       
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card:hover{
+        transform: scale(1.5,1.5);
+        z-index: 2000000000000000000;
+        border:1px  #c97e4f    solid;
+    }
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      #loader img {
+        width: 100px;
+        height: 100px;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      /* Hide the loader when the website has finished loading */
+      .loaded #loader {
+        display: none;
+      }
+      .section4{
+        margin: 50px;
+        background-color: #f2f2f2;
+        text-align: center;
+        height: 50vh;
+      }
+</style>   
+<link rel="stylesheet" href="static\bootstrap-5.3.0-dist\css\bootstrap.min.css">
+</head>
+<body>
+    <div id="loader" class="logo">
+        <img src="{{ url_for('static', filename='images/200w.gif') }}" alt="Loading...">
+      </div>
+      
+      
+    <div class="home" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home "><img src="{{ url_for('static', filename='images/heart-attack.png') }}" alt="heart" width="5%"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Project
+                    </a>
+        
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#info">INfo</a></li>
+                      <li><a class="dropdown-item" href="#class">prediction</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#uml">UML</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </ul>
+              </div>
+            </div>
+          </nav>
+<div class="layer">
+    <div class="home-content">
+   <h1>classification
+</h1>
+<p class="typingClass"> </p>
+      <div>
+        <div class="bt">
+            <button id="show-more-btn" onclick="toggleContent()" class="btn btn-outline-primary">Show More</button>
+            <div id="more-content" style="display:none;">
+              <p>This application allows you to diagnose heart diseases and whether you have a heart disease or not?     </p>  
+               <h2>   The application diagnoses</h2>
+                                
+           1-normal beat     
+           <br>
+           2-Supraventricular premature beat
+               <br>
+          3- Premature ventricular contraction
+                <br>
+              4- Fusion of ventricular and normal beat  
+              <br>
+               5-Unclassifiable beat 
+            <br>
+         
+            </div>
+              </div>
+            
+      </div>
+        
+</div>
+
+</div>
+
+    </div>
+<div class="section2">
+   <h3 id="about">About</h3>
+   <div class="lines">
+    <div class="line"></div>
+<div class="line1"></div>
+<div class="line2"></div>
+   <h2></h2>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <section class="feed">
+                <div class="container">
+                    <div class="color"></div>
+                    <div class="feed-content">
+                 <div class="feedimg">
+                <img src="{{ url_for('static', filename='images/ziad.jpg')}}" alt="ziad" width="100%">
+                </div>
+                <div class="feedcap">
+                <h3>Ziad Ahmed Sobhy </h3>
+                <h4>Id:20208123</h4>
+                <h4>GPA:3.67</h4>
+                </div>
+                </div>
+                </div>
+                        </section>
+                    </div>
+        
+          <div class="carousel-item active">
+            <section class="feed">
+                <div class="container">
+                    <div class="color"></div>
+                    <div class="feed-content">
+                 <div class="feedimg">
+                <img src="{{ url_for('static', filename='images/WhatsApp Image 2023-05-22 at 1.21.29 AM.jpeg') }}" alt="alaa" width="80%" height="80%">
+                </div>
+                <div class="feedcap">
+                <h3>Alaa Ahmed Farg </h3>
+                <h4>Id:20208064</h4>
+                <h4>GPA:3.45</h4>
+                </div>
+        
+                        </section>
+                    </div>
+          <div class="carousel-item active">
+                        <section class="feed">
+                            <div class="container">
+                                <div class="color"></div>
+                                <div class="feed-content">
+                             <div class="feedimg">
+                            <img src="{{ url_for('static', filename='images/ziad.jpg')}}" alt="ziad" width="100%">
+                            </div>
+                            <div class="feedcap">
+                            <h3>Ziad Ahmed Sobhy </h3>
+                            <h4>Id:20208123</h4>
+                            <h4>GPA:3.67</h4>
+                            </div>
+
+                                    </section>
+                      </div>
+          <div class="carousel-item active">
+                                    <section class="feed">
+                                        <div class="container">
+                                            <div class="color"></div>
+                                            <div class="feed-content">
+                                         <div class="feedimg">
+                                        <img src="{{ url_for('static', filename='images/ziad.jpg')}}" alt="ziad" width="100%">
+                                        </div>
+                                        <div class="feedcap">
+                                        <h3>Ziad Ahmed Sobhy </h3>
+                                        <h4>Id:20208123</h4>
+                                        <h4>GPA:3.67</h4>
+                                        </div>
+                                        </div>
+                                        </div>
+                                                </section>
+                      </div>
+          <div class="carousel-item active">
+                                                <section class="feed">
+                                                    <div class="container">
+                                                        <div class="color"></div>
+                                                        <div class="feed-content">
+                                                     <div class="feedimg">
+                                                    <img src="{{ url_for('static', filename='images/ziad.jpg')}}" alt="ziad" width="100%">
+                                                    </div>
+                                                    <div class="feedcap">
+                                                    <h3>Ziad Ahmed Sobhy </h3>
+                                                    <h4>Id:20208123</h4>
+                                                    <h4>GPA:3.67</h4>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                            </section>
+                      </div>
+        </div>
+        
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+</div>
+<div class="section3">
+    <div class="sup">
+        <div class="haed">
+            <div class="img">
+                <img src="{{ url_for('static', filename='images/heartbeat-5510272-4584154.gif')}}" alt="heart beat " width="20%">
+            </div>
+            <h3 id="info"></h3>
+            <div class="lines">
+            <div class="line"></div>
+<div class="line1"></div>
+<div class="line2"></div>
+</div>
+        </div>
+</div>
+        <div class="sup1">
+    <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/360_F_440811176_uhhLTFnosLbP4r9gcoSsFykvbQgvdBs0.jpg')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Normal beat </h5>
+          <p class="card-text">normal resting heart rate for adults ranges from 60 to 100 beats per minute.</p>
+         
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/big_62a6dba7ad2561.96009139.jpg')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Supraventricular premature beats</h5>
+          <p class="card-text">Supraventricular premature beats are atrial contractions triggered by ectopic foci rather than the sinoatrial node. They arise within the atria (atrial premature beats) or, through retrograde conduction, in the atrioventricular node
+
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/ecg-line-premature-ventricular-contraction-260nw-2177020097.webp')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Premature ventricular contractions (PVCs) </h5>
+          <p class="card-text"> are extra heartbeats that begin in one of the heart's two lower pumping chambers (ventricles). These extra beats disrupt the regular heart rhythm, sometimes causing a sensation of a fluttering or a skipped beat in the chest.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="sup2">
+      <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/Fusionbeatstutorial.jpg')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Fusion of ventricular and normal beat</h5>
+          <p class="card-text">occurs when a supraventricular and a ventricular impulse coincide to produce a hybrid complex.</p>
+         
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/ECG-tracing-of-an-unclassified-rhythm-Clinician-over-read-correctly-identified-this-as.png')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Unclassifiable beat </h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+         
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="{{ url_for('static', filename='images/360_F_440811176_uhhLTFnosLbP4r9gcoSsFykvbQgvdBs0.jpg')}}" class="card-img-top" alt="Normal beat">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+         
+        </div>
+    </div>
+      </div>
+    </div>
+
+<div class="section4">
+    <h1>ECG Diagnosis</h1>
+    <form>
+        <input type="file" name="image">
+        <input type="submit" value="Predict">
+    </form>
+    <div id="result"></div>
+</div>
+<script src="static\bootstrap-5.3.0-dist\js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  function toggleContent() {
+    var content = document.getElementById("more-content");
+    var button = document.getElementById("show-more-btn");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        button.innerHTML = "Show Less";
+    } else {
+        content.style.display = "none";
+        button.innerHTML = "Show More";
+    }
+}setTimeout(function() {
+    // Add the "loaded" class to the body element after 3 seconds
+   document.querySelector("body").classList.add("loaded");
+  }, 3000); // 3000 milliseconds = 3 seconds
+  $(document).ready(function() {
+                $('form').submit(function(event) {
+                    event.preventDefault();
+                    var formData = new FormData($(this)[0]);
+                    $.ajax({
+                        url: '/predict',
+                        type: 'POST',
+                        data: formData,
+                        async: false,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function(data) {
+                            $('#result').html(data);
+                        }
+                    });
+                });
+            });
+</script>
+
+
+
+</body>
+</html>
