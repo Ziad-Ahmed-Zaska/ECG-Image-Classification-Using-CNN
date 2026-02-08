@@ -2,7 +2,7 @@
 
 The web app uses a Convolutional Neural Network (CNN) to classify ECG images into six different classes. The six classes are:
 
-1.Fusion of ventricular and normal beat
+1.Fusion of ventricular
 2.Myocardial Infarction
 3.Normal Beat
 4.Premature Ventricular Contraction
